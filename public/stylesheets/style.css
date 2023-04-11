@@ -1,0 +1,39 @@
+:root{
+  --black: #262c36;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+}
+.l-nav{
+  height: 100vh;
+  padding: 2vmax;
+  background-color: var(--black);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.cnt{
+  width: 100%;
+}
+.cnt nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vmax;
+  background-color: var(--black);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.home{
+  background-color: var(--black);
+}
