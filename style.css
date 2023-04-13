@@ -99,7 +99,7 @@ nav {
 /* ------------------------------------------------------ LEFT NAV --------------------------------------------------------  */
 .l-nav {
   height: 93vh;
-  padding: 1vmax;
+  padding: 1vmax 0;
   background-color: var(--black);
   border-right: 1px solid #4d4d4d;
   display: flex;
@@ -111,14 +111,19 @@ nav {
 .logout {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1vmax;
 }
 .item {
   /* padding: 1vmax; */
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: white;
   font-size: 0.7vmax;
+}
+.item span{
+  text-align: center;
 }
 .divider {
   width: 100%;
@@ -361,6 +366,8 @@ nav {
 .web-cnt {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .web {
@@ -378,7 +385,7 @@ nav {
 }
 .inp-cnt {
   padding: 0.2vmax 0.5vmax;
-  width: 45vmax;
+  width: 43vmax;
   background-color: #262c36;
   margin-top: 0.5vmax;
   border-radius: 8px;
