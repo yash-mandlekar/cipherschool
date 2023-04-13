@@ -48,7 +48,7 @@
           </label>
         </div>
       </nav>
-      
+
       <div class="cnt">
         <div class="l-nav">
           <div class="items">
@@ -92,7 +92,10 @@
             <div class="nav-profile">
               <div class="l-profile">
                 <div class="img">
-                  <img src="https://lh3.googleusercontent.com/a/AGNmyxYwkXeCRXbWgz42ILXN8fCCb-RWp3gRfymAwzI3=s96-c" alt="">
+                  <img
+                    src="https://lh3.googleusercontent.com/a/AGNmyxYwkXeCRXbWgz42ILXN8fCCb-RWp3gRfymAwzI3=s96-c"
+                    alt=""
+                  />
                   <i class="bi bi-pencil"></i>
                 </div>
                 <div class="details">
@@ -105,11 +108,144 @@
             </div>
           </div>
           <div class="home-cnt">
-            <div class="content"></div>
-            <div class="r-nav"></div>
+            <div class="about">
+              <div class="a-nav">
+                <div class="a-title">ABOUT ME</div>
+                <button class="a-btn">Edit</button>
+              </div>
+              <textarea class="textarea" disabled name="" id=""></textarea>
+            </div>
+            <div class="divider"></div>
+            <div class="map">
+              <div class="map-title">CIPHER MAP</div>
+            </div>
+            <div class="divider"></div>
+            <div class="on-web">
+              <div class="web-nav">
+                <div class="a-title">On The Web</div>
+                <button class="web-btn">Edit</button>
+              </div>
+              <div class="web-cnt">
+                <div class="web">
+                  <label for="linkedIn">Linkedin</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-linkedin"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+                <div class="web">
+                  <label for="linkedIn">Github</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-github"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+                <div class="web">
+                  <label for="linkedIn">Facebook</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-facebook"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+                <div class="web">
+                  <label for="linkedIn">Twitter</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-twitter"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+                <div class="web">
+                  <label for="linkedIn">Instagram</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-instagram"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+                <div class="web">
+                  <label for="linkedIn">Website</label>
+                  <div class="inp-cnt">
+                    <i class="bi bi-globe"></i>
+                    <input type="text" placeholder="LinkedIn" />
+                    <i class="bi bi-pencil"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="pro-info">
+              <div class="a-nav">
+                <div class="a-title">PROFESSIONAL INFORMATION</div>
+                <button class="a-btn">Edit</button>
+              </div>
+              <div class="pro-cnt">
+                <div class="dropdowns">
+                  <label for="education">Highest education</label>
+                  <div class="dropdown">
+                    <select name="cars" id="cars">
+                      <option value="primary">Primary</option>
+                      <option value="secondary">Secondary</option>
+                      <option value="higgher secondary">
+                        Higgher Secondary
+                      </option>
+                      <option value="graduation">Graduation</option>
+                      <option value="post graduation">Post Graduation</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdowns">
+                  <label for="education">What do you do currently?</label>
+                  <div class="dropdown">
+                    <select name="cars" id="cars">
+                      <option value="schooling">Schooling</option>
+                      <option value="college student">College Student</option>
+                      <option value="teaching">Teaching</option>
+                      <option value="job">Job</option>
+                      <option value="freelancing">Freelancing</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="pass">
+              <div class="a-nav">
+                <div class="a-title">PASSWORD & SECURITY</div>
+                <button class="a-btn">Change</button>
+              </div>
+              <div class="pass-cnt">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" />
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="interest">
+              <div class="a-nav">
+                <div class="a-title">INTERESTS</div>
+                <button class="a-btn">Edit</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      var editBtn = document.querySelector(".a-btn");
+      var textarea = document.querySelector(".textarea");
+
+      editBtn.addEventListener("click", function () {
+        if (textarea.disabled) {
+          textarea.disabled = false;
+          editBtn.innerHTML = "Save";
+        } else {
+          textarea.disabled = true;
+          editBtn.innerHTML = "Edit";
+        }
+      });
+    </script>
   </body>
 </html>
