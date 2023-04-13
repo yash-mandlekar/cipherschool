@@ -37,12 +37,108 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
+}
+.box-cnt{
+  width: 45vmax;
+  background-color: #262c36;
+  padding: 2vmax;
+  border-radius: 10px;
+  color: white;
+}
+.box-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-nav span{
+  font-size: 1.3vmax;
+  font-weight: 500;
+}
+.box-nav button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5vmax;
+  cursor: pointer;
 }
 .box{
-  background-color: #262c36;
-  padding: 1vmax;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.img-cnt{
+  position: relative;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-cnt img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.img-cnt i{
+  position: absolute;
+  bottom: -1.5vmax;
+  background-color: var(--black);
+  color: white;
+  border-radius: 100%;
+  padding: 0.6vmax;
+}
+.fields{
+    width: 70%;
+}
+.field{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5vmax;
+}
+.field label{
+  font-size: 0.9vmax;
+  font-weight: 500;
+  margin-bottom: 0.5vmax;
+  color: rgba(246, 246, 246, 0.803);
+}
+.field input{
+  width: 100%;
+  background-color: #16181d;
+  border: none;
+  color: white;
+  padding: 0.7vmax;
+  outline: none;
+  border-radius: 5px;
+}
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 1vmax;
+}
+.btns button{
+  width: 30%;
+  background-color: #16181d;
+  border: none;
+  color: white;
+  padding: 0.7vmax;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btns button:nth-child(2){
+  background-color: #f2912e;
+}
+.btns button:nth-child(2):hover{
+  background-color: #d78e27;
+}
+.btns button:nth-child(1):hover{
+  background-color: #4d4d4d;
+}
 /* ------------------------------------------------------ NAV --------------------------------------------------------  */
 
 nav {
