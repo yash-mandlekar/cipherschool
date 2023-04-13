@@ -52,6 +52,30 @@
         </div>
       </div>
     </div>
+    <div class="overlay2">
+      <div class="box-cnt">
+        <form class="box">
+          <div class="fields">
+            <div class="field">
+              <label for="firstname">Current Password</label>
+              <input type="text" required placeholder="Current Password" />
+            </div>
+            <div class="field">
+              <label for="lastname">New Password</label>
+              <input type="text" required placeholder="New Password" />
+            </div>
+            <div class="field">
+              <label for="email">Confirm Password</label>
+              <input type="text" required placeholder="Confirm Password" />
+            </div>
+            <div class="btns">
+              <button class="cancel">Cancel</button>
+              <button type="submit" class="save">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="main">
       <nav>
         <div class="logos">
@@ -255,7 +279,7 @@
             <div class="pass">
               <div class="a-nav">
                 <div class="a-title">PASSWORD & SECURITY</div>
-                <button class="a-btn">Change</button>
+                <button class="toggle-overlay2 a-btn">Change</button>
               </div>
               <div class="pass-cnt">
                 <label for="password">Password</label>
@@ -278,7 +302,9 @@
       var editBtn = document.querySelector(".a-btn");
       var textarea = document.querySelector(".textarea");
       var overlay = document.querySelector(".overlay");
+      var overlay2 = document.querySelector(".overlay2");
       var toggleoverlay = document.querySelector(".toggle-overlay");
+      var toggleoverlay2 = document.querySelector(".toggle-overlay2");
 
       editBtn.addEventListener("click", function () {
         if (textarea.disabled) {
@@ -291,12 +317,28 @@
       });
 
       overlay.addEventListener("click", function (e) {
-        if (e.target.classList.contains("overlay") || e.target.classList.contains("bi-x") || e.target.classList.contains("cancel")) {
+        if (
+          e.target.classList.contains("overlay") ||
+          e.target.classList.contains("bi-x") ||
+          e.target.classList.contains("cancel")
+        ) {
           overlay.style.display = "none";
+        }
+      });
+      overlay2.addEventListener("click", function (e) {
+        if (
+          e.target.classList.contains("overlay2") ||
+          e.target.classList.contains("bi-x") ||
+          e.target.classList.contains("cancel")
+        ) {
+          overlay2.style.display = "none";
         }
       });
       toggleoverlay.addEventListener("click", function () {
         overlay.style.display = "flex";
+      });
+      toggleoverlay2.addEventListener("click", function () {
+        overlay2.style.display = "flex";
       });
     </script>
   </body>
